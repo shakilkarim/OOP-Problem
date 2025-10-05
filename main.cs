@@ -5,31 +5,16 @@ class Student
 
     public string name;
     public int age;
-    public Student(string name, int age)
+    public Student(string nameP, int ageP)
     {
-        this.name = name;
-        this.age = age;
+        this.name = nameP;
+        this.age = ageP;
     }
     public void showInfo()
     {
         Console.WriteLine("Name: {0}, Age: {1}", name, age);
     }
 
-}
-class Teacher
-{
-    public string name;
-    public string subject;
-
-    //Set name and subject
-    public void setName(string name)
-    {
-        this.name = name;
-    }
-    public string getName()
-    {
-        return name;
-    }
 }
 
 // class Teacher
@@ -48,7 +33,6 @@ class Program
     public static void Main()
     {
         Student student1 = new Student("shakil", 20);
-
         student1.showInfo();
     }
 }

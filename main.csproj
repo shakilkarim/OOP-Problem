@@ -4,6 +4,7 @@
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp7.0</TargetFramework>
     <StartupObject>Program</StartupObject>
+  <StartupObject>HelloWorld</StartupObject>
   </PropertyGroup>
 
 </Project>
