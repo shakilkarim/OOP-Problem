@@ -35,6 +35,6 @@ class HelloWorld
         StudentNew student1 = new StudentNew();
         student1.setName("shakil");
         student1.setAge(20);
-        Console.WriteLine("Name:{0} , Age:{1}",student1.getName(),student1.getAge());
+        Console.WriteLine("Name:{0} ,Age:{1}",student1.getName(),student1.getAge());
     }
 }
