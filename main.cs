@@ -26,6 +26,10 @@ class Teacher
     {
         this.name = name;
     }
+    public string getName()
+    {
+        return name;
+    }
 }
 
 // class Teacher
