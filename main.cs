@@ -66,6 +66,24 @@ class QuizProperties
     }
 }
 
+//Ploymorphism overwriting example
+public class Course
+{
+    public virtual void ShowDetails()
+    {
+        Console.WriteLine("Course Details");
+    }
+
+}
+
+public class CSharp : Course
+{
+    public override void ShowDetails()
+    {
+        Console.WriteLine("C# Course Details");
+    }
+}
+
 class Program
 {
     public static void Main()
@@ -78,9 +96,12 @@ class Program
         // hscStudent.showInfo();
         // hscStudent.NightClass();
 
-        QuizProperties quiz = new QuizProperties();
-        quiz.Quiz();
-        quiz.Quiz(30);
-        quiz.Quiz(30, "C#");
+        // QuizProperties quiz = new QuizProperties();
+        // quiz.Quiz();
+        // quiz.Quiz(30);
+        // quiz.Quiz(30, "C#");
+
+        CSharp course = new CSharp();
+        course.ShowDetails();
     }
 }
