@@ -1,20 +1,42 @@
 using System;
 
-class Student
+public class Student
 {
 
-    public string name;
-    public int age;
-    public Student(string nameP, int ageP)
+    protected string name;
+    protected int age;
+
+    public Student(string name, int age)
     {
-        this.name = nameP;
-        this.age = ageP;
+        this.name = name;
+        this.age = age;
     }
     public void showInfo()
     {
         Console.WriteLine("Name: {0}, Age: {1}", name, age);
     }
 
+}
+
+public class StudentSSC : Student
+{
+    public StudentSSC(string name, int age) : base(name, age)
+    {
+
+    }
+    public void ExtraClass()
+    {
+        Console.WriteLine("Extra Class for SSC");
+    }
+}
+public class HSCStudent : Student
+{
+    public HSCStudent(string name, int age) : base(name, age) { }
+
+    public void NightClass()
+    {
+        Console.WriteLine("Night Class");
+    }
 }
 
 // class Teacher
@@ -32,7 +54,12 @@ class Program
 {
     public static void Main()
     {
-        Student student1 = new Student("shakil", 20);
-        student1.showInfo();
+        StudentSSC studentSSC = new StudentSSC("shakil", 20);
+        studentSSC.showInfo();
+        studentSSC.ExtraClass();
+
+        HSCStudent hscStudent = new HSCStudent("shakib", 220);
+        hscStudent.showInfo();
+        hscStudent.NightClass();
     }
 }
