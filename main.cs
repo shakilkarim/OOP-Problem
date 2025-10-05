@@ -16,6 +16,17 @@ class Student
     }
 
 }
+class Teacher
+{
+    public string name;
+    public string subject;
+
+    //Set name and subject
+    public void setName(string name)
+    {
+        this.name = name;
+    }
+}
 
 // class Teacher
 // {
